@@ -11,7 +11,7 @@ function News() {
     async function fetchNews() {
       try {
         const params = new URLSearchParams({
-          query: "(war OR conflict OR NATO OR nuclear)",
+          query: "(war OR conflict OR NATO OR nuclear) sourcelang:english",
           mode: "artlist",
           format: "json",
           maxrecords: "10",
@@ -19,12 +19,7 @@ function News() {
           sort: "datedesc",
         });
 
-        const url =
-          `https://api.gdeltproject.org/api/v2/doc/doc?${params.toString()}`;
-
-        console.log("Fetching news from:", url);
-
-        const response = await fetch(url);
+        const response = await fetch(`/gdelt-api?${params.toString()}`);
 
         if (!response.ok) {
           throw new Error(`HTTP Error: ${response.status}`);
@@ -79,7 +74,7 @@ function News() {
             className="col-md-6"
             key={article.url || index}
           >
-            <div className="dashboard-card">
+            <div className="panel">
               <h5>{article.title}</h5>
 
               <p className="text-secondary small">

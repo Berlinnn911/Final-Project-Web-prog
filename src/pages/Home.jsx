@@ -22,12 +22,12 @@ function Home() {
 
       <div className="row g-4">
         <div className="col-md-6">
-          <div className="dashboard-card text-center">
+          <div className="panel text-center">
             <FaExclamationTriangle className="text-danger fs-1 mb-3" />
 
             <h3>WW3 Probability</h3>
 
-            <h1 className="probability">
+            <h1 className="score">
               {probability}%
             </h1>
 
@@ -45,7 +45,7 @@ function Home() {
         </div>
 
         <div className="col-md-6">
-          <div className="dashboard-card">
+          <div className="panel">
             <FaGlobe className="text-danger fs-1 mb-3" />
 
             <h3>Global Risk Level</h3>
@@ -60,7 +60,7 @@ function Home() {
         </div>
 
         <div className="col-12">
-          <div className="dashboard-card">
+          <div className="panel">
             <FaChartLine className="text-danger fs-1 mb-3" />
 
             <h3>About the Dashboard</h3>

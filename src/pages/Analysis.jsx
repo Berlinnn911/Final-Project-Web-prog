@@ -62,13 +62,13 @@ function Analysis() {
         Risk Analysis
       </h1>
 
-      <div className="dashboard-card">
+      <div className="panel">
         <div style={{ height: "400px" }}>
           <canvas ref={canvasRef}></canvas>
         </div>
       </div>
 
-      <div className="dashboard-card mt-4">
+      <div className="panel mt-4">
         <h3>Risk Factors</h3>
         <ul>
           <li>International military conflicts</li>

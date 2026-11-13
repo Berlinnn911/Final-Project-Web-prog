@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.custom-navbar {
+.navigation {
   background-color: #141922;
   border-bottom: 1px solid #292f3a;
 }
@@ -24,7 +24,7 @@ body {
   color: #ff4545 !important;
 }
 
-.dashboard-card {
+.panel {
   background-color: #141922;
   border: 1px solid #292f3a;
   border-radius: 12px;
@@ -32,7 +32,7 @@ body {
   height: 100%;
 }
 
-.probability {
+.score {
   font-size: 65px;
   font-weight: bold;
   color: #ff4545;
@@ -59,12 +59,12 @@ a {
   text-decoration: none;
 }
 
-.dashboard-card p {
+.panel p {
   line-height: 1.7;
 }
 
 @media (max-width: 768px) {
-  .probability {
+  .score {
     font-size: 45px;
   }
 
